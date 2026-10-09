@@ -65,9 +65,10 @@ const base = process.env.SMOKE_BASE_URL || "http://127.0.0.1:3000";
   const page = await context.newPage();
   await page.goto(`${base}/uk`);
   await page.locator('header .languages a[lang="ru"]').click();
-  await page.waitForURL("**/ru");
+  await page.waitForURL((url) => url.pathname.replace(/\/$/, "") === "/ru");
   await page.goto(`${base}/`);
-  assert(page.url().endsWith("/ru"));
+  await page.waitForURL((url) => url.pathname.replace(/\/$/, "") === "/ru");
+  assert(new URL(page.url()).pathname.replace(/\/$/, "") === "/ru");
   await context.close();
   for (const [header, expected] of [
     ["uk-UA,uk;q=0.9", "uk"],
@@ -77,10 +78,14 @@ const base = process.env.SMOKE_BASE_URL || "http://127.0.0.1:3000";
   ]) {
     const c = await browser.newContext({
       extraHTTPHeaders: { "Accept-Language": header },
+      locale: header.split(",")[0],
     });
     const p = await c.newPage();
     await p.goto(`${base}/`);
-    assert(p.url().endsWith("/" + expected));
+    await p.waitForURL(
+      (url) => url.pathname.replace(/\/$/, "") === "/" + expected,
+    );
+    assert(new URL(p.url()).pathname.replace(/\/$/, "") === "/" + expected);
     await c.close();
   }
   const c = await browser.newContext();
