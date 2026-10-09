@@ -63,7 +63,7 @@ error_page 404 /404.html;
 
 Do not use an SPA fallback to `index.html`; unknown URLs should return 404. The root page detects saved language/browser preferences using JavaScript, then opens `/uk/`, `/ru/` or `/en/`. Without JavaScript it offers language links. Each locale page is complete pre-rendered HTML with localized SEO. Server-side Accept-Language detection remains available in Node.js/Docker deployments. Static hosting has no server middleware or runtime environment variables: rebuild to change the public origin or content.
 
-**Build without a local toolchain:** on GitHub open **Actions → Build static hosting package → Run workflow**, enter your real HTTPS origin, and wait for success. Download the `shawarma-patrol-static` artifact from that run, unzip it and upload its contents to `public_html/`.
+**Build without a local toolchain:** on GitHub open **Actions → Build static hosting package → Run workflow**, enter your real domain (with or without `https://`), and wait for success. A bare domain is normalized to HTTPS; paths, credentials and query strings are rejected. Download the `shawarma-patrol-static` artifact from that run, unzip it and upload its contents to `public_html/`.
 
 For local static verification run `python3 -m http.server 3002 --directory out` and, in another terminal, `SMOKE_BASE_URL=http://127.0.0.1:3002 CHROMIUM_PATH=/usr/bin/chromium npm run test:smoke`. Python is only a local test server, not a production dependency.
 
