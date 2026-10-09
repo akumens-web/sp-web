@@ -1,0 +1,109 @@
+{
+  "meta": {
+    "title": "Shawarma Patrol — Gaming Community",
+    "description": "Old-school MMO veterans. New worlds, the same patrol. Discover our journey, community tools and next adventure."
+  },
+  "nav": {
+    "about": "About",
+    "journey": "Journey",
+    "projects": "Projects",
+    "media": "Media",
+    "join": "Join the patrol",
+    "menu": "Open navigation",
+    "close": "Close navigation",
+    "language": "Select language",
+    "skip": "Skip to content"
+  },
+  "hero": {
+    "eyebrow": "MMO ROOTS. NO LIMITS.",
+    "line1": "We don’t play games.",
+    "line2": "We invade them.",
+    "description": "Old-school MMO veterans. Builders. Beautiful troublemakers. Games change. The patrol stays.",
+    "story": "Our story",
+    "scroll": "Scroll to explore",
+    "badge": "Community first. Always."
+  },
+  "about": {
+    "eyebrow": "01 / THE PEOPLE BEHIND THE TAG",
+    "title": "Different worlds.",
+    "accent": "Same people.",
+    "description": "Born in the chaos of hardcore MMORPGs. Held together by the people, the late-night raids and jokes that never get old.",
+    "cards": {
+      "combat": "For the fight",
+      "combatText": "PvP, PvE and events. We show up together.",
+      "people": "For the people",
+      "peopleText": "A community that outlives every server and every game.",
+      "build": "For the next idea",
+      "buildText": "Our own tools, automation and a healthy appetite for experiments."
+    }
+  },
+  "journey": {
+    "eyebrow": "02 / OUR JOURNEY",
+    "title": "Every world left a mark.",
+    "description": "One community. Many chapters. And we’re nowhere near done.",
+    "next": "NEXT TARGET: UNKNOWN",
+    "nextText": "The next world is out there. We’ll bring the same people.",
+    "origins": "Origins",
+    "legacy": "Legacy",
+    "current": "Current",
+    "games": {
+      "lineage": "Where it started. Clan life, hard-earned victories and old-school PvP.",
+      "archeage": "New horizons. Shared adventures. Another chapter together.",
+      "bdo": "A different world, the same competitive spirit.",
+      "lu4": "Back toward our Lineage II roots, reimagined with Unreal Engine 5.",
+      "wow": "Our current chapter. Alliance, raids and the next fight."
+    }
+  },
+  "current": {
+    "eyebrow": "03 / CURRENT CHAPTER",
+    "faction": "ALLIANCE",
+    "title": "A new world.",
+    "accent": "A familiar banner.",
+    "description": "Find the patrol in World of Warcraft: Forever. PvP, PvE, community events and our own tools — all connected through Discord.",
+    "tags": ["PvP & PvE", "Community events", "Recruitment open"],
+    "cta": "Find your party"
+  },
+  "projects": {
+    "eyebrow": "04 / BUILT IN-HOUSE",
+    "title": "We don’t just play.",
+    "accent": "We build.",
+    "description": "Made by the patrol, for the patrol. Ideas that turn into tools.",
+    "development": "Active development",
+    "experimental": "Experimental",
+    "anika": "Our community assistant for Discord and Telegram. Onboarding, roles, events, notifications and connected workflows.",
+    "addon": "A World of Warcraft addon for professions, levels, recipes and community information, connected to our infrastructure.",
+    "market": "Game economy and auction intelligence tooling. Inspired by the Black Marketeer of Mammon from Lineage II.",
+    "visit": "Explore project",
+    "repository": "Source code",
+    "tags": {
+      "automation": "Automation",
+      "community": "Community",
+      "integration": "Integration",
+      "economy": "Economy",
+      "auctions": "Auctions",
+      "analysis": "Analysis"
+    }
+  },
+  "media": {
+    "eyebrow": "05 / STAY IN THE LOOP",
+    "title": "Beyond the game.",
+    "description": "The conversations, the moments and the occasional chaos.",
+    "pending": "Link coming soon",
+    "discord": "Where the patrol meets",
+    "telegram": "Keep up with the community",
+    "youtube": "Moments worth replaying",
+    "twitch": "Catch us in the wild"
+  },
+  "join": {
+    "eyebrow": "YOUR NEXT PARTY IS HERE",
+    "title": "Ready to join",
+    "accent": "the patrol?",
+    "description": "Bring your experience. Bring your weird sense of humor. Let’s find the next adventure together.",
+    "cta": "Join Discord",
+    "pending": "Discord invite will be added here soon."
+  },
+  "footer": {
+    "tagline": "Games change. The patrol stays.",
+    "rights": "Built by the community."
+  }
+}
